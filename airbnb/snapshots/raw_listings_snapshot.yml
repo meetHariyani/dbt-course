@@ -5,4 +5,6 @@ snapshots:
         unique_key: ID
         updated_at: UPDATED_AT
         strategy: timestamp
-        hard_delete: invalidate
+
+        meta:
+          hard_delete: invalidate
