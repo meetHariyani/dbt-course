@@ -1,0 +1,8 @@
+snapshots:
+    - name: scd_raw_listings
+      relation: source('airbnb', 'listings')
+      config: 
+        unique_key: ID
+        updated_at: UPDATED_AT
+        strategy: timestamp
+        hard_delete: invalidate
